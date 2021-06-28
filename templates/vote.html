@@ -20,7 +20,7 @@
       </div>
       <div class="col-12 col-md-10">
         <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="{{kinoko_percent|safe}}" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="{{kinoko_percent|safe}}" aria-valuemin="0" aria-valuemax="100" style="width: {{kinoko_percent|safe}}%"></div>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="col-12 col-md-10">
         <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="{{takenoko_percent|safe}}" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="{{takenoko_percent|safe}}" aria-valuemin="0" aria-valuemax="100" style="width: {{takenoko_percent|safe}}%"></div>
         </div>
       </div>
     </div>
@@ -39,15 +39,7 @@
       <div class="row mb-4">
         <h2>最近の応援メッセージ</h2>
       </div>
-      <div class="alert alert-warning ms-5" role="alert">
-        きのこかわいい！
-      </div>
-      <div class="alert alert-success me-5" role="alert">
-        たけのこもいいぞ！
-      </div>
-      <div class="alert alert-warning ms-5" role="alert">
-        俺は断然きのこかな
-      </div>
+     {{message_html|safe}}
     </div>
 
     <div class="text-center mt-3">
